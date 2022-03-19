@@ -18,9 +18,9 @@ elForm.addEventListener("submit", function(evt){
     let euro = (elInputVal / EURO_TO_UZS).toFixed(2);
     let dollar = (elInputVal / DOLLAR_TO_UZS).toFixed(2);
     
-    elResultUsd.textContent += dollar;
-    elResultEuro.textContent += euro;
-    elResultRubl.textContent += rubl;
+    elResultUsd.textContent = "Dolarda = $ " + dollar;
+    elResultEuro.textContent = "Euroda = € " + euro;
+    elResultRubl.textContent = "Rublda = " + rubl;
     
     if (elInputVal <= 0) {
         alert("Iltimos, Alisher aka siz kursni bilishingiz uchun 0 dan farqli son kiriting !");
